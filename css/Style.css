@@ -1,0 +1,590 @@
+﻿@font-face
+{
+    font-family: Avo;
+    src: url('/font/UTM Avo.ttf');
+}
+@font-face
+{
+    font-family: UTMS;
+    src: url('/font/UTM Swiss Condensed.ttf'); /* TTF for CSS3 */
+}
+@font-face
+{
+    font-family: UTMSB;
+    src: url('/font/UTM Swiss CondensedBold.ttf');
+}
+@font-face
+{
+    font-family: AvoB;
+    src: url('/font/UTM AvoBold.ttf'); /* TTF for CSS3 */
+}
+@font-face
+{
+    font-family: VNF-Intro Inline;
+    src: url('/font/VNF-Intro Inline.ttf'); /* TTF for CSS3 */
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #BFBFBF;
+}
+.ContentBody
+{
+    width: 1020px;
+    background-color: #fff;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Header
+{
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    background: url('/images/design/Bg_Header.png') no-repeat center center;
+}
+
+.MenuTop
+{
+    background: #22b04c;
+    height: 36px;
+    list-style-type: none;
+    margin: 0 auto;
+    width: 1000px;
+    border-top: 1px solid #fff;
+}
+.ContentCenter
+{
+    width: 1000px;
+    margin: 0 auto;
+}
+.CenterLeft
+{
+    padding-bottom: 10px;
+}
+.ContentCenter ul
+{
+}
+.Title
+{
+    background: #22b04c;
+    line-height: 34px;
+    font-family: Arial;    
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight:bold;
+}
+.ProCatItem
+{
+    background: #e2f9c1;
+    line-height: 34px;
+    font-family: Arial;
+    font-size: 14px;
+    margin-top: 1px;
+    
+}
+.ProCatItem a
+{
+    color: #4d4d4d  !important;
+}
+.CenterLeft li
+{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+}
+.ContentLeftItem p
+{
+    padding-top: 5px;
+}
+.ContentLeftItem
+{
+    color: #22b04c;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 22px;
+}
+.ContentLeft
+{
+    line-height: 30px;
+}
+.CenterLeft li a
+{
+    text-decoration: none;
+    color: #fff;
+    padding-left: 20px;
+}
+.CenterLeft a
+{
+    text-decoration: none;
+    color: #fff;
+    padding-left: 20px;
+}
+.SlideTop
+{
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+    background: url('/images/Bg_Slide.png') no-repeat center center;
+}
+.BannerTop
+{
+    text-align: center;
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    background-color: #f1f1f1;
+    height: 203px;
+}
+
+.MenuTop li
+{
+    display: inline;
+    padding: 0 12px;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 30px;
+}
+.MenuTop li a
+{
+    text-decoration: none;    
+    font-family: Arial;
+    font-weight:bold;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+.MenuTop li a:hover
+{
+    color: Yellow;
+}
+.ProductsHot
+{
+  margin-top:-30px !important;
+    margin: 0 auto;
+   
+    background: #eee;
+}
+.ProductsHot li
+{
+     height: 206px;
+    margin-right: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+.last
+{
+    margin: 0 !important;
+}
+.ProductsHot a
+{
+    font-family: Arial;
+    color: #357521;    
+    font-size: 16px;
+    text-decoration:none;
+}
+.ProductsHot
+{
+    color: #357521;
+    font-family: Arial;
+    font-size: 17px;
+    line-height: 54px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    margin-bottom:20px;
+}
+.Footer
+{
+    margin: 0 auto;
+    background: #22b04c;
+    padding: 20px 0 20px 30px;
+}
+.Footer p
+{
+    color: #fff;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 20px;
+}
+.Footer h2
+{
+    font-family: Arial;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    line-height: 30px;
+    color: #fff;
+}
+.CenterLeft
+{
+    width: 234px;
+    float: left;    
+}
+.CenterRight
+{
+    width: 742px;
+    float: right;
+    margin-top: 10px;
+}
+.FooterL
+{
+    width: 78%;
+    float: left;
+}
+.FooterR
+{
+    width: 22%;
+    float: right;
+}
+.FooterR p
+{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.FooterR ul
+{
+    margin-top: 10px;
+}
+.FooterR ul li
+{
+    padding: 0 5px;
+}
+.Clear
+{
+    clear: both;
+}
+
+.MenuItem li
+{
+    padding: 0 12px;
+    height: 36px;
+    float: left;
+    line-height: 34px;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    background-image: url('/images/BgMenuTop.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    text-transform: uppercase;
+}
+.MenuItem li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.MenuItem li a link
+{
+    text-decoration: none;
+    color: #fff;
+}
+.MenuItem li a link:hover
+{
+    text-decoration: none;
+    color: red;
+}
+.MenuItem li a link:visited
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*Menu*/
+ul
+{
+    list-style: outside none none;
+}
+ul li
+{
+    list-style-type: none;
+    display: inline;
+    float: left;
+}
+
+.ImgNewsHot
+{
+    width:226px;
+    float:left;
+}
+.ContentNewsHot
+{
+    width:490px;
+    float:right;
+}
+.ImgNewsHot h2
+{
+    background: #eee ;
+    font-family: Arial;
+    font-size: 15px;
+    height: 34px;
+    line-height: 30px;
+    color:#357521;
+    padding-left:20px;    
+}
+.ContentNewsHot h2
+{
+    text-align:justify;
+}
+.ContentNewsHot h2 a
+{
+  color: #357521;
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 18px;
+    
+    text-align: justify;
+    text-decoration: none;
+    
+}
+.ContentNewsHot p
+{
+    padding-top:10px;
+        font-family: Arial;
+    font-size: 15px;
+    line-height: 18px;
+    color: #357521;
+    text-align:justify;
+}
+.ContentNewsHot span 
+{
+    background: #357521;
+    color: #fff;
+    float: right;
+    font-family: Arial;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.ProductsHomeItem
+{
+    width:226px;
+    float:left;
+    margin-bottom:20px;
+    margin-right: 30px;
+}
+.ProductsHomeItemLast
+{
+    width:226px;
+    float:left;
+    margin-bottom:20px;    
+}
+.ProductsHomeItem img
+{
+    border:2px solid #eee;
+    width:226px;
+    height:166px;
+}
+.ProductsHomeItemLast img
+{
+    border:2px solid #eee;
+    width:226px;
+    height:166px;
+}
+.ProductsHomeItem h2 
+{
+      height: 46px;
+    overflow: hidden;
+    text-align: center;
+}
+.ProductsHomeItem h2 a
+{
+  color: #357521;
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    text-decoration: none;
+}
+.ProductsHomeItemLast h2
+{
+          height: 46px;
+    overflow: hidden;
+    text-align: center;
+}
+.ProductsHomeItemLast h2 a
+{
+  color: #357521;
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    text-decoration: none;
+}
+.TitleSPNB {    
+    color: #357521;
+    font-family: Arial;
+    font-size: 15px;
+    height: 44px;
+    line-height: 40px;    
+    margin-top:15px;
+    text-transform:uppercase;
+    
+}
+.ContentCenter
+{
+    background-color:#fff;
+}
+
+/* Makes images fully responsive */
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ------------------- Carousel Styling ------------------- */
+
+.carousel-inner {
+  border-radius: 15px;
+}
+
+.carousel-caption {
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 0 0 10px 25px;
+  color: #fff;
+  text-align: left;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 15;
+  margin: 0;
+  padding: 0 25px 25px 0;
+  text-align: right;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+
+
+
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.container-big {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+.big-logo {
+  width: 100px;
+  margin-bottom:15px
+}
+h1.heading {
+  color: #fff;
+  font-size: 1.15em;
+  font-weight: 900;
+  margin: 0 0 0.5em;
+  color: #505050;
+}
+@media (min-width: 450px) {
+  h1.heading {
+    font-size: 3.55em;
+  }
+}
+@media (min-width: 760px) {
+  h1.heading {
+    font-size: 3.05em;
+  }
+}
+@media (min-width: 900px) {
+  h1.heading {
+    font-size: 3.25em;
+    margin: 0 0 0.3em;
+  }
+} 
+.carbox {
+  display: block; 
+    margin-bottom: 5px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+    transition: box-shadow .25s; 
+}
+.carbox:hover {
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.img-carbox {
+  width: 100%;
+  height:200px;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  display:block;
+    overflow: hidden;
+}
+.img-carbox img{
+  width: 100%;
+  height: 200px;
+  object-fit:cover; 
+  transition: all .25s ease;
+} 
+.carbox-content {
+  padding:15px;
+  text-align:left;
+}
+.carbox-title {
+  margin-top:0px;
+  font-weight: 700;
+  font-size: 1.65em;
+}
+.carbox-title a {
+  color: #000;
+  text-decoration: none !important;
+}
+.carbox-read-more {
+  border-top: 1px solid #D4D4D4;
+}
+.carbox-read-more a {
+  text-decoration: none !important;
+  padding:10px;
+  font-weight:600;
+  text-transform: uppercase
+}
+/* ------------------- Section Styling - Not needed for carousel styling ------------------- */
+
+.section-white {
+   padding: 10px 0;
+}
+
+.section-white {
+  background-color: #fff;
+  color: #555;
+}
+
+/**                            =================                         Custom Bootstrap          =========================                                          **/
+.carousel-caption
+{
+    right: 0% !important;
+    left: 0% !important;
+   bottom: 0px !important;
+}
+.carousel-control {
+    width:3% !important;
+}

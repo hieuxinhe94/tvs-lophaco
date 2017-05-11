@@ -1,0 +1,303 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <asp:ContentPlaceHolder ID="headerCotent" runat="server" />
+
+    <!--meta tag-->
+    <meta content="Dược phẩm tp vinh , nghệ an, hà tĩnh, Dược mỹ phẩm, vật tư y tế, sản phẩm làm đẹp, mẹ và bé , nhà thuốc Tâm An, lophaco"
+        name="description">
+    <meta content="Dược phẩm phẩm tp vinh , nghệ an, hà tĩnh, Dược mỹ phẩm, vật tư y tế, sản phẩm làm đẹp, mẹ và bé , nhà thuốc Tâm An, lophaco"
+        name="keywords">
+    <!--close meta tag-->
+
+    <link rel="Shortcut Icon" href="http://www.duocphamlophaco.vn/images/LogoLophaco.png">
+    <!----style-css---->
+    <link href="css/Style.css" rel="stylesheet" />
+    <link href="css/temp_css.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <!-----js----->
+    
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.png" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body style="padding:2px !important ; margin:2px !important; background-color:#BFBFBF !important; padding-top:0px !important;margin-top:0px !important">
+    <form runat="server">
+          <div class="ContentBody">
+
+       
+        <asp:ScriptManager runat="server">
+        </asp:ScriptManager>
+        <!--------Header-------->
+        <div class="Header">
+
+            <input placeholder="Tìm kiếm" size="20" class="inputbox" maxlength="100" id="mod-search-searchword" name="searchword" style="border: medium none; float: right; font-style: italic; margin-top: 22px; width: 160px; margin-right: 47px; background: transparent none repeat scroll 0% 0%; color: #fff; font-size: 12px;"
+                onkeyup="onEnter(event)" type="text">
+            <a class="nr" href="javascript:void(0)" onclick="search()">
+                <img src="/images/design/IconSeach.png" style="margin-left: 956px; position: absolute; top: 30px; width: auto;"
+                    onclick="search();" alt="Tìm kiếm" title="Tìm kiếm" >
+            </a>
+        </div>
+
+
+        <div class="MenuTop">
+            <ul>
+                <li class="first"><a class="first selected aclear" href="http://www.duocphamlophaco.vn/trang-chu.html">
+                    <img src="images/design/IconHome.png" alt="Trang chủ">
+                </a></li>
+                <li><a href="http://www.duocphamlophaco.vn/trang-chu.html" title="Trang chủ">Trang chủ</a></li>
+                <li><a href="http://www.duocphamlophaco.vn/gioi-thieu-sn4.html" title="Giới thiệu">Giới thiệu</a> </li>
+                <li><a href="http://www.duocphamlophaco.vn/san-pham-sp1032.html" title="Sản phẩm">Sản phẩm</a> </li>
+                <li><a href="http://www.duocphamlophaco.vn/tin-tuc-sn1031.html" title="Tin tức">Tin tức</a> </li>
+                <li><a href="http://www.duocphamlophaco.vn/khuyen-mai-sn13.html" title="Khuyến mãi">Khuyến mãi</a> </li>
+                <li><a href="http://www.duocphamlophaco.vn/danh-sach-dai-ly-sn1033.html" title="Danh sách đại lý">Danh sách đại lý</a> </li>
+                <li><a href="http://www.duocphamlophaco.vn/huong-dan-mua-hang-sn15.html" title="Hướng dẫn mua hàng">Hướng dẫn mua hàng</a> </li>
+                <li><a href="http://www.duocphamlophaco.vn/lien-he.html" title="Liên hệ">Liên hệ</a> </li>
+            </ul>
+        </div>
+
+         <!--------/Header-------->
+
+        <!------slide------>
+            <div class="container" style="width:100% !important ; height:300px !important; padding:10px!important;padding-top:2px!important ;margin:0 !important; ">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators" style=" bottom: 0px !important;">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+             <img src="images/article/capture_9dbe1.png" alt=""  style="height:300px !important;" />
+
+          <div class="carousel-caption">
+            <h4>Nếu bạn luôn buồn phiền, hãy dùng hy vọng để chữa trị; hạnh phúc lớn nhất của nhân loại chính là biết hi vọng </h4>
+          </div>
+        </div>
+        <div class="item">
+                <img src="images/article/canh-dep-thien-nhien-trong-nhung-khu-rung-bi-an-19_9897a.jpg" style="height:300px !important;" />
+          <div class="carousel-caption">
+            <h4>Good health for life </h4>
+          </div>
+        </div>
+        <div class="item" >
+         <img src="images/article/capture_92e97.jpg" style="height:300px !important;" />
+          <div class="carousel-caption">
+            <h4>Nếu hạnh phúc có thể mua, cái giá của nó chẳng mấy ai trả được.  </h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+
+  </div>
+
+              <asp:ContentPlaceHolder ID="contentSlide" runat="server"/>
+
+<!------Menu- Trái---->        
+
+<div class="ContentCenter">
+                <div class="CenterLeft">
+                <div class="Title">
+                    <a href="http://www.duocphamlophaco.vn/nhom-san-pham-chinh-ssc2.html">
+                        Nhóm sản Phẩm chính</a></div>
+
+                <div class="ProCatItem">
+                    <a href="http://www.duocphamlophaco.vn/nhom-san-pham-nhi-ssc26.html">
+                        Nhóm sản phẩm nhi</a></div>
+
+                <div class="ProCatItem">
+                    <a href="http://www.duocphamlophaco.vn/nhom-xuong-khop-ssc39.html">
+                        Nhóm xương khớp</a></div>
+
+                <div class="ProCatItem">
+                    <a href="http://www.duocphamlophaco.vn/nhom-thuoc-bo-ssc37.html">
+                        Nhóm thuốc bổ</a></div>
+
+                <div class="ProCatItem">
+                    <a href="http://www.duocphamlophaco.vn/nhom-tim-mach-ssc27.html">
+                        Nhóm tim mạch</a></div>
+
+                <div class="ProCatItem">
+                    <a href="http://www.duocphamlophaco.vn/nhom-than-kinh-ssc35.html">
+                        Nhóm thần kinh</a></div>
+
+                <div class="ProCatItem">
+                    <a href="http://www.duocphamlophaco.vn/nhom-tieu-hoa-ssc41.html">
+                        Nhóm tiêu hóa</a></div>
+
+                <div class="ProCatItem">
+                    <a href="http://www.duocphamlophaco.vn/nhom-ho-hap-ssc36.html">
+                        Nhóm hô hấp</a></div>
+
+                <div class="Title">
+                    <a href="http://www.duocphamlophaco.vn/suc-khoe-sinh-ly-nu-ssc5.html">
+                        Sức khỏe - Sinh lý nữ</a></div>
+
+                <div class="ProCatItem">
+                    <a href="http://www.duocphamlophaco.vn/thuoc-ssc28.html">
+                        Thuốc </a></div>
+
+                <div class="ProCatItem">
+                    <a href="http://www.duocphamlophaco.vn/thuc-pham-chuc-nang-ssc29.html">
+                        Thực phẩm chức năng</a></div>
+
+                <div class="Title">
+                    <a href="http://www.duocphamlophaco.vn/suc-khoe-sinh-ly-nam-ssc18.html">
+                        Sức khỏe - Sinh lý nam</a></div>
+
+                <div class="ProCatItem">
+                    <a href="http://www.duocphamlophaco.vn/thuoc-ssc30.html">
+                        Thuốc</a></div>
+
+                <div class="ProCatItem">
+                    <a href="http://www.duocphamlophaco.vn/thuc-pham-chuc-nang-ssc31.html">
+                        Thực phẩm chức năng</a></div>
+
+
+
+                <div class="Title">
+                    <a>Hỗ trợ trực tuyến</a></div>
+                <div>
+                    <div class="ContentLeftItem">
+                        <img src="C%C3%94NG%20TY%20TNHH%20TM%20LOPHACO_files/IconHotline.png" alt="Hotline">
+                        <p>
+                            Hotline :
+                            0974 501 699<br>Kinh doanh: 0383 855 862
+                            <br>
+                            Email:
+                            congtylophaco.vn@gmail.com
+                        </p>
+                    </div>
+                </div>
+
+       
+
+                <div class="Title">
+                    <a href="http://www.duocphamlophaco.vn/thu-vien-video-vd0.html">Video</a></div>
+                <div>
+                    <div class="ContentLeftItem">
+                        <iframe src="http://www.youtube.com/embed/zKV0uj3tSi8" allowfullscreen="" height="133" frameborder="0" width="233"></iframe>
+
+                        <p style="text-align: right;">
+                            <a style="font-size: 11px; color: #357521;" href="http://www.duocphamlophaco.vn/thu-vien-video-vd0.html">&gt;&gt; Xem tất
+                                cả</a>
+                        </p>
+                    </div>
+                </div>
+
+
+
+                        <div class="Title">
+                    <a>Thống kê truy cập</a></div>
+                            <div>
+                    <div class="ContentLeftItem">
+                        <p>
+                            Đang xem :
+                            <span id="ucCountStatic1_lblOnline">1</span>
+                            <br>
+                            Hôm nay :
+                            <span id="ucCountStatic1_lblVisitToday">39</span>
+                            <br>
+                            Hôm qua :
+                            <span id="ucCountStatic1_lblVisitLastDay">77</span>
+                            <br>
+                            Trong tháng :
+                            <span id="ucCountStatic1_lblVisitInMonth">840</span>
+                            <br>
+                            Tổng cộng:
+                            <span id="ucCountStatic1_lblVisitAll">57007</span>
+                        </p>
+                    </div>
+                </div>
+                </div>
+
+
+               
+          <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+</div>
+          <div class="Clear"></div>
+               <div class="Footer">
+            <div class="FooterL">
+                <h2>
+                    công ty tnhh tm lophaco
+                </h2>
+                <p>
+                    Địa chỉ: số 73, đường Vệ Định, khối 8, phường Đội Cung, thành phố Vinh, tỉnh Nghệ
+                    An
+                    <br>
+                    Điện thoại: 0383 855 862 - Hotline : 0974 501 699
+                    <br>
+                    Email: congtylophaco.vn@gmail.com - website: www.duocphamlophaco.vn
+                    <br>
+                    Mã số thuế: 2901712133
+                    <br>
+                    Người đại diện: Nguyễn Hồng Ngọc
+                </p>
+            </div>
+            <div class="FooterR">
+                <p>
+                    Kết nối với chúng tôi
+                </p>
+                <ul>
+                    <li><a href="#">
+                        <img src="images/design/IconFace.png" alt="FaceBook"/>
+                        </a></li>
+                    <li><a href="#">
+                        <img src="images/design/IconG.png" alt="Google Plus"></a></li>
+                    <li><a href="#">
+                        <img src="images/design/IconIN.png" alt="In"></a></li>
+                    <li><a href="#">
+                        <img src="images/design/IconYOUTUBE.png" alt="YouTube"></a></li>
+                </ul>
+            </div>
+            <div class="Clear">
+            </div>
+        </div>
+
+    </form>
+
+    <!-----Script Action------->
+    <script>
+        $(document).ready(function () {
+            $('#Carousel').carousel({
+                interval: 3500
+            })
+        });
+    </script>
+    <script type="text/javascript">
+        function search() {
+            window.location = "/tim-kiem.html?q=" + $("#mod-search-searchword").val().replace(/&amp;/g, ' ').replace(/#/g, ' ');
+        }
+        function onEnter(e) {
+            if (e.keyCode == 13)
+                search();
+        }
+        function onEnter1(e) {
+            search();
+        }
+    </script>
+        
+</body>
+</html>
