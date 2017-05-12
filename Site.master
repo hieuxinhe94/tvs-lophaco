@@ -70,48 +70,7 @@
          <!--------/Header-------->
 
         <!------slide------>
-            <div class="container" style="width:100% !important ; height:300px !important; padding:10px!important;padding-top:2px!important ;margin:0 !important; ">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators" style=" bottom: 0px !important;">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-             <img src="images/article/capture_9dbe1.png" alt=""  style="height:300px !important;" />
-
-          <div class="carousel-caption">
-            <h4>Nếu bạn luôn buồn phiền, hãy dùng hy vọng để chữa trị; hạnh phúc lớn nhất của nhân loại chính là biết hi vọng </h4>
-          </div>
-        </div>
-        <div class="item">
-                <img src="images/article/canh-dep-thien-nhien-trong-nhung-khu-rung-bi-an-19_9897a.jpg" style="height:300px !important;" />
-          <div class="carousel-caption">
-            <h4>Good health for life </h4>
-          </div>
-        </div>
-        <div class="item" >
-         <img src="images/article/capture_92e97.jpg" style="height:300px !important;" />
-          <div class="carousel-caption">
-            <h4>Nếu hạnh phúc có thể mua, cái giá của nó chẳng mấy ai trả được.  </h4>
-          </div>
-        </div>
-      </div>
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-      </a>
-    </div>
-
-  </div>
+        
 
               <asp:ContentPlaceHolder ID="contentSlide" runat="server"/>
 

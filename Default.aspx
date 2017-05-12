@@ -7,6 +7,43 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="contentSlide" runat="server">
 
+    <div class="container" style="width:100% !important ; height:300px !important; padding:10px!important;padding-top:2px!important ;margin:0 !important; ">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+             <img src="images/article/capture_9dbe1.png" alt=""  style="height:300px !important;" />
+
+          <div class="carousel-caption">
+            <h4>Nếu bạn luôn buồn phiền, hãy dùng hy vọng để chữa trị; hạnh phúc lớn nhất của nhân loại chính là biết hi vọng </h4>
+          </div>
+        </div>
+        <div class="item">
+                <img src="images/article/canh-dep-thien-nhien-trong-nhung-khu-rung-bi-an-19_9897a.jpg" style="height:300px !important;" />
+          <div class="carousel-caption">
+            <h4>Good health for life </h4>
+          </div>
+        </div>
+        <div class="item" >
+         <img src="images/article/capture_92e97.jpg" style="height:300px !important;" />
+          <div class="carousel-caption">
+            <h4>Nếu hạnh phúc có thể mua, cái giá của nó chẳng mấy ai trả được.  </h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+
+  </div>
     <!--------------close slide------->
 
     <link href="css/custom.css" rel="stylesheet" />
@@ -18,7 +55,7 @@
         <h4 style="margin-top: 32px; padding-top: 10px"><b>Sản phẩm mới</b>
         </h4>
         <section class="wrapper">
-            <div class="col-md-12">
+            <div class="col-md-12" style="margin-right: -2% !important;margin-left: -2% !important; width:104% !important">
                 <div class="content">
                     <div class="container" style="width: 100% !important">
                         <div id="Carousel" class="carousel slide">
@@ -159,6 +196,7 @@
                         <!--.Carousel-->
 
                     </div>
+                </div>
                 </div>
         </section>
     </div>
